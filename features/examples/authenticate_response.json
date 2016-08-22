@@ -1,0 +1,22 @@
+{
+  "jsonrpc": "2.0",
+  "id": "01",
+  "result": {
+    "username": "15026660001",
+    "user_context": {
+      "lang": "zh_CN",
+      "tz": "Asia/Shanghai",
+      "uid": 4705
+    },
+    "uid": 4705,
+    "tags": [
+      "4705",
+      "p5460"
+    ],
+    "db": "demo4",
+    "company_id": 10,
+    "session_id": "3458f15dbb83641c5b4bf32ef93c297fa57a845d",
+    "role": "Dealer",
+    "partner_id": 5460
+  }
+}

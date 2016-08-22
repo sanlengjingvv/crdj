@@ -1,0 +1,17 @@
+{
+	"params":{
+			"order_id":"14",
+			"picking_id":"19",
+			"comfirm_products":[
+				{
+					"product_id":13,
+					"product_qty":1
+				},
+				{
+					"product_id":13,
+					"product_qty":1
+				}
+			],
+				"remarks":"what"
+		}
+}

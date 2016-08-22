@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "params": {
+      "id": "params",
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "id": "order_id",
+          "type": "string"
+        },
+        "picking_id": {
+          "id": "picking_id",
+          "type": "string"
+        },
+        "comfirm_products": {
+          "id": "comfirm_products",
+          "type": "array",
+          "items": [
+            {
+              "id": "0",
+              "type": "object",
+              "properties": {
+                "product_id": {
+                  "id": "product_id",
+                  "type": "integer"
+                },
+                "product_qty": {
+                  "id": "product_qty",
+                  "type": "integer"
+                }
+              }
+            },
+            {
+              "id": "1",
+              "type": "object",
+              "properties": {
+                "product_id": {
+                  "id": "product_id",
+                  "type": "integer"
+                },
+                "product_qty": {
+                  "id": "product_qty",
+                  "type": "integer"
+                }
+              }
+            }
+          ]
+        },
+        "remarks": {
+          "id": "remarks",
+          "type": "string"
+        }
+      },
+      "required": [
+        "order_id",
+        "picking_id",
+        "comfirm_products",
+        "remarks"
+      ]
+    }
+  },
+  "required": [
+    "params"
+  ]
+}

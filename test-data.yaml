@@ -1,0 +1,23 @@
+--- 
+/app_api/session/authenticate:
+  sql: |-
+    INSERT INTO films (code, title) VALUES ('T_601', 'Yojimbo');
+    UPDATE films SET kind = 'Dramatic' WHERE kind = 'Drama';
+/app_api/session/destroy: 
+  user: 15026660002
+  sql: |-
+    INSERT INTO films (code, title) VALUES ('T_601', 'Yojimbo');
+    UPDATE films SET kind = 'Dramatic' WHERE kind = 'Drama';
+/app_api/product/{product_id}: 
+  user: 15026660001
+  sql: |-
+    todo
+/app_api/dataset/search_read_product: 
+  user: 15026660001
+  sql: |-
+    todo
+/app_api/user/list_address: 
+  user: 15026660001
+  sql: |-
+    todo
+    

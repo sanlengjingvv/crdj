@@ -1,0 +1,28 @@
+{
+  "jsonrpc": "2.0",
+  "id": null,
+  "result": {
+    "records": [
+      {
+        "city": 0,
+        "display_name": "15026660001",
+        "name": "15026660001",
+        "zip": "",
+        "mobile": "",
+        "is_default": true,
+        "country_id": 49,
+        "active": true,
+        "county": 0,
+        "phone": "",
+        "street": "",
+        "city_name": "",
+        "county_name": "",
+        "country_name": "中国",
+        "state_id": 0,
+        "type": "contact",
+        "id": 5460,
+        "state_name": ""
+      }
+    ]
+  }
+}

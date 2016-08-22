@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "jsonrpc": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "params": {
+      "type": "object",
+      "properties": {
+        "db": {
+          "description": "数据库名称",
+          "type": "string"
+        },
+        "login": {
+          "description": "用户名",
+          "type": "string"
+        },
+        "password": {
+          "description": "密码",
+          "type": "string"
+        }
+      }
+    },
+    "id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "params"
+  ]
+}

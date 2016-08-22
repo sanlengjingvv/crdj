@@ -1,0 +1,17 @@
+{
+  "jsonrpc": "2.0",
+  "method": "call",
+  "params": {
+    "context": {
+      "lang": "es_ES",
+      "tz": "Europe/Madrid",
+      "uid": 6
+    },
+    "model": "product.template",
+    "offset": 0,
+    "limit": 5,
+    "search_type": "refund",
+    "product_name": "小茗同学450",
+    "sort": "profit_rate desc"
+  }
+}

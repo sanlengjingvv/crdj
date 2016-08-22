@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "jsonrpc": {
+      "id": "jsonrpc",
+      "type": "string"
+    },
+    "method": {
+      "id": "method",
+      "type": "string"
+    }
+  },
+  "required": [
+    "jsonrpc",
+    "method"
+  ]
+}

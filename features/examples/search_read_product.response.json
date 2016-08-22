@@ -1,0 +1,54 @@
+{
+  "jsonrpc": "2.0",
+  "id": null,
+  "result": {
+    "records": [
+      {
+        "product_policy": {
+        },
+        "original_price": 25.0,
+        "product_specification": "450ml",
+        "sale_ok": true,
+        "product_unit": " 提",
+        "price": 25.0,
+        "image_small": "",
+        "product_stock_qty": 0,
+        "rate": 0,
+        "msrp_price": 0.0,
+        "sales_count": 0,
+        "variants": [
+          [
+            "口味",
+            "薄荷",
+            "菠萝"
+          ]
+        ],
+        "product_options": [
+          {
+            "original_price": "25.00",
+            "product_id": 45003,
+            "price": "25.00",
+            "product_stock_qty": 0,
+            "product_qty": 0,
+            "product_attr": [
+              "菠萝"
+            ]
+          },
+          {
+            "original_price": "25.00",
+            "product_id": 45002,
+            "price": "25.00",
+            "product_stock_qty": 0,
+            "product_qty": 0,
+            "product_attr": [
+              "薄荷"
+            ]
+          }
+        ],
+        "id": 17906,
+        "name": "小茗同学450"
+      }
+    ],
+    "isCarSaler": false
+  }
+}

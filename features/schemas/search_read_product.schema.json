@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "jsonrpc": {
+      "id": "jsonrpc",
+      "type": "string"
+    },
+    "method": {
+      "id": "method",
+      "type": "string"
+    },
+    "params": {
+      "id": "params",
+      "type": "object",
+      "properties": {
+        "context": {
+          "id": "context",
+          "type": "object",
+          "properties": {
+            "lang": {
+              "id": "lang",
+              "type": "string"
+            },
+            "tz": {
+              "id": "tz",
+              "type": "string"
+            },
+            "uid": {
+              "id": "uid",
+              "type": "integer"
+            }
+          }
+        },
+        "model": {
+          "id": "model",
+          "type": "string"
+        },
+        "offset": {
+          "id": "offset",
+          "type": "integer"
+        },
+        "limit": {
+          "id": "limit",
+          "type": "integer"
+        },
+        "search_type": {
+          "id": "search_type",
+          "type": "string"
+        },
+        "product_name": {
+          "id": "product_name",
+          "type": "string"
+        },
+        "sort": {
+          "id": "sort",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "jsonrpc",
+    "method",
+    "params"
+  ]
+}

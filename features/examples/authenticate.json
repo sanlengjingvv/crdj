@@ -1,0 +1,10 @@
+{
+  "jsonrpc": "2.0",
+  "method": "call",
+  "params": {
+      "db": "demo4",
+      "login": "15026660001",
+      "password": "111111"
+  },
+  "id": "01"
+}

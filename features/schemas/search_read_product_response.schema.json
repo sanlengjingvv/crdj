@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "jsonrpc": {
+      "type": "string"
+    },
+    "id": {
+      "type": "null"
+    },
+    "result": {
+      "type": "object",
+      "properties": {
+        "records": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "product_policy": {
+                "type": "object",
+                "properties": {}
+              },
+              "original_price": {
+                "type": "number"
+              },
+              "product_specification": {
+                "type": "string"
+              },
+              "sale_ok": {
+                "type": "boolean"
+              },
+              "product_unit": {
+                "type": "string"
+              },
+              "price": {
+                "type": "number"
+              },
+              "image_small": {
+                "type": "string"
+              },
+              "product_stock_qty": {
+                "type": "integer"
+              },
+              "rate": {
+                "type": "integer"
+              },
+              "msrp_price": {
+                "type": "number"
+              },
+              "sales_count": {
+                "type": "integer"
+              },
+              "variants": {
+                "type": "array",
+                "items": {}
+              },
+              "product_options": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "original_price": {
+                      "type": "string"
+                    },
+                    "product_id": {
+                      "type": "integer"
+                    },
+                    "price": {
+                      "type": "string"
+                    },
+                    "product_stock_qty": {
+                      "type": "integer"
+                    },
+                    "product_qty": {
+                      "type": "integer"
+                    },
+                    "product_attr": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "isCarSaler": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+#%RAML 0.8
+title: example
+baseUri: http://example:9069
+
+resourceTypes:
+  - logined:
+      description: 需要登录后才能访问的接口
+      post:
+        headers:
+          Content-Type:
+            example: application/json
+            required: true
+          Cookie:
+            example: session_id=b05d5f4c67e5e9f7b53360ee0f7756db796e4565
+            required: true
+
+/app_api:
+  /session:
+    /authenticate:
+      description: 登录
+      post:
+        headers:
+          Content-Type:
+            example: application/json
+            required: true
+          Cookie:
+            required: true
+        body:
+          application/json:
+            schema: !include schemas/authenticate.schema.json
+            example: !include examples/authenticate.json
+        responses:
+          200:
+            body:
+              application/json:
+                schema: !include schemas/authenticate_response.schema.json
+                example: !include examples/authenticate_response.json
+
+    /destroy:
+      description: 退出登录 
+      type: logined
+      post:
+        headers:
+          Content-Type:
+            example: application/json
+            required: true
+          Cookie:
+            example: session_id=12
+            required: true
+        body:
+          application/json:
+            schema: !include schemas/destroy.schema.json
+            example: !include examples/destroy.json
+        responses:
+          200:
+            body:
+              application/json:
+                schema: !include schemas/destroy_response.schema.json
+                example: !include examples/destroy_response.json
+
+  /product:
+    /{product_id}:
+      uriParameters:
+        product_id:
+          type: integer
+          example: 17906
+      description: 查询商品详情 
+      type: logined
+      post:
+        body:
+          application/json:
+            schema: !include schemas/product_detail.schema.json
+            example: !include examples/product_detail.json
+        responses:
+          200:
+            body:
+              application/json:
+                schema: !include schemas/product_detail_response.schema.json
+                example: !include examples/product_detail_response.json
+
+  /dataset:
+    /search_read_product:
+      description: 查询产品列表 
+      type: logined
+      post:
+        body:
+          application/json:
+            schema: !include schemas/search_read_product.schema.json
+            example: !include examples/search_read_product.json
+        responses:
+          200:
+            body:
+              application/json:
+                schema: !include schemas/search_read_product_response.schema.json
+                example: !include examples/search_read_product.response.json
+
+  /user:
+    /list_address:
+      description: 获取地址列表 
+      type: logined
+      post:
+        body:
+          application/json:
+            schema: !include schemas/list_address.schema.json
+            example: !include examples/list_address.json
+        responses:
+          200:
+            body:
+              application/json:
+                schema:  !include schemas/list_address_response.schema.json
+                example: !include examples/list_address_response.json
